@@ -10,6 +10,9 @@ DEVICE_PATH := device/samsung/a6lte
 ## Include common BoardConfig
 include device/samsung/exynos7870-common/BoardConfigCommon.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a6lte
+
 # Kernel
 TARGET_KERNEL_CONFIG := exynos7870-a6lte_defconfig
 
