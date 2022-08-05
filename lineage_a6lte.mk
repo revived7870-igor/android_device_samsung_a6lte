@@ -21,6 +21,7 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := Galaxy A6 2018
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+PRODUCT_SHIPPING_API_LEVEL := 26
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
