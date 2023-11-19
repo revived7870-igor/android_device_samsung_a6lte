@@ -13,7 +13,8 @@ $(call inherit-product, device/samsung/exynos7870-common/exynos7870.mk)
 # Init
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/init/fstab.samsungexynos7870:$(TARGET_COPY_OUT_RAMDISK)/fstab.samsungexynos7870 \
-    $(DEVICE_PATH)/configs/init/fstab.samsungexynos7870:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.samsungexynos7870
+    $(DEVICE_PATH)/configs/init/fstab.samsungexynos7870:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.samsungexynos7870 \
+    $(DEVICE_PATH)/configs/init/init.a6lte.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.a6lte.rc
 
 # Display
 TARGET_SCREEN_DENSITY := 320
