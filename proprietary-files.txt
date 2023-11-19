@@ -22,6 +22,7 @@ vendor/firmware/setfile_2p6_front.bin
 
 # Init
 vendor/etc/init/wifi_brcm.rc
+vendor/etc/init/init.vendor.onebinary.rc
 
 # Wifi
 vendor/bin/hw/macloader
