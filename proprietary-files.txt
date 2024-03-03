@@ -9,7 +9,7 @@ vendor/lib/libstainkiller.so
 vendor/lib/libuniplugin.so
 vendor/lib/libexynoscamera.so
 vendor/lib/libexynoscamera3.so
-vendor/lib/libhwjpeg.so
+#vendor/lib/libhwjpeg.so
 
 # Firmware
 vendor/firmware/nfc/sec_s3nrn81_firmware.bin

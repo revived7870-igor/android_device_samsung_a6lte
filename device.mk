@@ -10,6 +10,9 @@ DEVICE_PATH := device/samsung/a6lte
 ## Inherit common device
 $(call inherit-product, device/samsung/exynos7870-common/exynos7870.mk)
 
+## Inherit device vendor blobs
+$(call inherit-product, vendor/samsung/a6lte/a6lte-vendor.mk)
+
 # Init
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/init/fstab.samsungexynos7870:$(TARGET_COPY_OUT_RAMDISK)/fstab.samsungexynos7870 \
@@ -25,6 +28,11 @@ TARGET_SCREEN_WIDTH := 720
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_0.xml
+
+# Media
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
